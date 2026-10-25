@@ -1,0 +1,8 @@
+/build/
+/vendor/
+/.phpunit.cache/
+/node_modules/
+/__pycache__/
+*.py[cod]
+/.dex/
+/.phpstan.cache

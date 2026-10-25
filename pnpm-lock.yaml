@@ -1,0 +1,85 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@rocketsarenostalgic/quality-config':
+        specifier: github:RocketsAreNostalgic/ran-quality-config#7faebe578c509e9265769314fd41bb1485b868b0
+        version: https://codeload.github.com/RocketsAreNostalgic/ran-quality-config/tar.gz/7faebe578c509e9265769314fd41bb1485b868b0(@wordpress/prettier-config@5.0.0(prettier@3.9.10))(prettier@3.9.10)
+      '@wordpress/prettier-config':
+        specifier: ^5.0.0
+        version: 5.0.0(prettier@3.9.10)
+      prettier:
+        specifier: ^3.6.2
+        version: 3.9.10
+
+packages:
+
+  '@rocketsarenostalgic/quality-config@https://codeload.github.com/RocketsAreNostalgic/ran-quality-config/tar.gz/7faebe578c509e9265769314fd41bb1485b868b0':
+    resolution: {gitHosted: true, integrity: sha512-gXp94buODSkKbS0497kcBB66oU0nHLYZeGnwZlYpJ4qgsvdw0DUSpH9MJr0XbgQJK0/bhdWxBymqF9xBpbs9tQ==, tarball: https://codeload.github.com/RocketsAreNostalgic/ran-quality-config/tar.gz/7faebe578c509e9265769314fd41bb1485b868b0}
+    version: 0.1.0
+    engines: {node: '>=24.21.0 <25', pnpm: '>=11 <12'}
+    peerDependencies:
+      '@babel/core': '>=7 <8'
+      '@wordpress/eslint-plugin': 25.7.0
+      '@wordpress/prettier-config': 4.51.0
+      '@wordpress/stylelint-config': 26.1.0
+      eslint: ^9.39.5
+      prettier: ^3.9.5
+      react: ^18.3.1 || ^19.0.0
+      react-dom: ^18.3.1 || ^19.0.0
+      stylelint: ^17.14.1
+      stylelint-scss: ^7.2.0
+      typescript: '>=5 <7'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@wordpress/eslint-plugin':
+        optional: true
+      '@wordpress/prettier-config':
+        optional: true
+      '@wordpress/stylelint-config':
+        optional: true
+      eslint:
+        optional: true
+      prettier:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      stylelint:
+        optional: true
+      stylelint-scss:
+        optional: true
+      typescript:
+        optional: true
+
+  '@wordpress/prettier-config@5.0.0':
+    resolution: {integrity: sha512-uQ3rtrqt8yvUHFN9Xcxuw7EfSw4ArMkwFxtz2RHZM2Sis9jzB7xk0FcK/iWE55q0WWSjmFGWoNVpOEQoSE7ocQ==}
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      prettier: '>=3'
+
+  prettier@3.9.10:
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+snapshots:
+
+  '@rocketsarenostalgic/quality-config@https://codeload.github.com/RocketsAreNostalgic/ran-quality-config/tar.gz/7faebe578c509e9265769314fd41bb1485b868b0(@wordpress/prettier-config@5.0.0(prettier@3.9.10))(prettier@3.9.10)':
+    optionalDependencies:
+      '@wordpress/prettier-config': 5.0.0(prettier@3.9.10)
+      prettier: 3.9.10
+
+  '@wordpress/prettier-config@5.0.0(prettier@3.9.10)':
+    dependencies:
+      prettier: 3.9.10
+
+  prettier@3.9.10: {}

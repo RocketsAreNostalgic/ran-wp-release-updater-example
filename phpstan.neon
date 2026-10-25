@@ -1,0 +1,13 @@
+parameters:
+  level: 8
+  phpVersion: 80400
+  treatPhpDocTypesAsCertain: false
+  paths:
+    - .
+  scanFiles:
+    - tests/stubs/wordpress.php
+  excludePaths:
+    - vendor
+    - node_modules
+    - build
+    - .git

@@ -1,0 +1,56 @@
+{
+	"name": "ran/wp-release-updater-example",
+	"description": "Minimal WordPress plugin developer demo for ran/wp-release-updater.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/RocketsAreNostalgic/ran-wp-release-updater.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/RocketsAreNostalgic/ran-coding-standards.git"
+		}
+	],
+	"require": {
+		"php": ">=8.4 <8.6",
+		"ran/wp-release-updater": "~1.0.0-beta.13"
+	},
+	"require-dev": {
+		"phpcompatibility/php-compatibility": "10.0.0-alpha2",
+		"phpcompatibility/phpcompatibility-paragonie": "2.0.0-alpha2",
+		"phpcompatibility/phpcompatibility-wp": "3.0.0-alpha2",
+		"phpstan/phpstan": "^2.1",
+		"ran/coding-standards": "^1.0"
+	},
+	"scripts": {
+		"check": [
+			"@validate:strict",
+			"@lint:syntax",
+			"@standards",
+			"@analyze",
+			"@test:contract",
+			"@test:bootstrap",
+			"@test:build",
+			"@test:workflow"
+		],
+		"validate:strict": "composer validate --strict --no-check-publish",
+		"lint:syntax": "php scripts/lint-php.php",
+		"standards": "phpcs --standard=.phpcs.xml --report=summary",
+		"analyze": "phpstan analyse --configuration=phpstan.neon --no-progress --memory-limit=1G",
+		"test:contract": "php tests/contract.php",
+		"test:bootstrap": "php tests/bootstrap-execution.php",
+		"test:build": "python3 tests/build-contract.py",
+		"test:workflow": "python3 tests/workflow-contract.py"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"platform": {
+			"php": "8.4.0"
+		},
+		"sort-packages": true
+	}
+}
