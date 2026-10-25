@@ -8,6 +8,6 @@ parameters:
     - tests/stubs/wordpress.php
   excludePaths:
     - vendor
-    - node_modules
-    - build
-    - .git
+    - node_modules (?)
+    - build (?)
+    - .git (?)
