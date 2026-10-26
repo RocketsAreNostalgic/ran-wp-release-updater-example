@@ -94,7 +94,7 @@ jobs:
                   wp plugin is-active ran-wp-release-updater-example --path=/tmp/wordpress --allow-root
                   test "$(wp plugin get ran-wp-release-updater-example --path=/tmp/wordpress --field=version --allow-root)" = "$(python3 -c 'import json; print(json.load(open("build/manifest.json"))["version"])')"
             - run: python3 scripts/promotion-manifest.py --archive "build/$(python3 -c 'import json; print(json.load(open("build/manifest.json"))["archive"])')" --manifest build/manifest.json --output build/ran-profile-b-promotion.json
-            - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+            - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
               with:
                   name: ran-wp-release-updater-example-promotion-${{ github.run_id }}-${{ github.run_attempt }}
                   path: |
