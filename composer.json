@@ -15,7 +15,7 @@
 	],
 	"require": {
 		"php": ">=8.4 <8.6",
-		"ran/wp-release-updater": "~1.0.0-beta.13"
+		"ran/wp-release-updater": "~1.0.0-beta.14"
 	},
 	"require-dev": {
 		"phpcompatibility/php-compatibility": "10.0.0-alpha2",
