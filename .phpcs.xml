@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset name="RAN WP Release Updater Example">
+	<description>Local WordPress-plugin profile configuration.</description>
+
+	<file>ran-wp-release-updater-example.php</file>
+	<file>scripts</file>
+	<file>tests</file>
+
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<exclude-pattern>build/*</exclude-pattern>
+
+	<rule ref="RANWordPressPlugin" />
+
+	<config name="minimum_wp_version" value="7.0" />
+	<config name="testVersion" value="8.4-8.5" />
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="ran_release_updater_example" />
+				<element value="Ran\ReleaseUpdaterExample" />
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="ran-wp-release-updater-example" />
+			</property>
+		</properties>
+	</rule>
+</ruleset>
