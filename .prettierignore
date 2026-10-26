@@ -4,5 +4,6 @@ node_modules/
 .git/
 .dex/
 scripts/__pycache__/
+CHANGELOG.md
 composer.lock
 pnpm-lock.yaml
