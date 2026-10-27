@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/RocketsAreNostalgic/ran-wp-release-updater-example
  * Description: Minimal developer example for ran/wp-release-updater.
  * // x-release-please-start-version
- * Version: 0.2.0
+ * Version: 0.2.1
  * // x-release-please-end
  * Requires at least: 7.0
  * Requires PHP: 8.4
