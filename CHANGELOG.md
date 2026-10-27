@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/RocketsAreNostalgic/ran-wp-release-updater-example/compare/v0.2.0...v0.2.1) (2026-10-27)
+
+
+### Bug Fixes
+
+* **deps:** adopt release updater beta.14 ([#5](https://github.com/RocketsAreNostalgic/ran-wp-release-updater-example/issues/5)) ([2f0527d](https://github.com/RocketsAreNostalgic/ran-wp-release-updater-example/commit/2f0527daaee73da21ba1881ab65a56509b716c47))
+
 ## [0.2.0](https://github.com/RocketsAreNostalgic/ran-wp-release-updater-example/compare/v0.1.0...v0.2.0) (2026-10-26)
 
 
