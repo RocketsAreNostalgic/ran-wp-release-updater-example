@@ -9,6 +9,17 @@ or release publisher.
 It requires WordPress 7.0 or later and PHP 8.4–8.5. The main plugin file loads
 and registers the updater before `plugins_loaded`; registration is passive.
 
+## Bundled updater
+
+The lock binds `ran/wp-release-updater` to `1.0.0-beta.21` (runtime protocol
+11); the Composer constraint is `~1.0.0-beta.21`. Its native status includes
+`last_native_outcome`, and binding writes use schema 2. Older copies cannot read
+those rows; incompatible runtime protocols fail closed in either load order. Coordinate compatible bundled copies before
+installation; changing load order does not resolve a protocol conflict.
+
+See [testing and qualification](docs/testing.md) for what the local gates and
+archive build prove, and the installed checks still required.
+
 ## Adapt it
 
 Change the plugin header and registration together:

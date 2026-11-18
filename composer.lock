@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e027811b3d4d6eef7340d14c8f88c838",
+    "content-hash": "d55909691c5667431c9f1719a6756fa2",
     "packages": [
         {
             "name": "ran/wp-release-updater",
-            "version": "v1.0.0-beta.14",
+            "version": "v1.0.0-beta.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RocketsAreNostalgic/ran-wp-release-updater.git",
-                "reference": "301908da6164027a43bdf4b2eef1101765886e11"
+                "reference": "6f5d66b3f5b6f7e1ece992d36da80b19f5788907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RocketsAreNostalgic/ran-wp-release-updater/zipball/301908da6164027a43bdf4b2eef1101765886e11",
-                "reference": "301908da6164027a43bdf4b2eef1101765886e11",
+                "url": "https://api.github.com/repos/RocketsAreNostalgic/ran-wp-release-updater/zipball/6f5d66b3f5b6f7e1ece992d36da80b19f5788907",
+                "reference": "6f5d66b3f5b6f7e1ece992d36da80b19f5788907",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +33,7 @@
                 "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^11.0",
                 "ran/coding-standards": "^1.0",
-                "ran/updater-support": "1.0.0-beta.4",
+                "ran/updater-support": "1.0.0-beta.9",
                 "szepeviktor/phpstan-wordpress": "^2.0"
             },
             "type": "library",
@@ -107,7 +107,7 @@
                 "security": "https://github.com/RocketsAreNostalgic/ran-wp-release-updater/security/advisories/new",
                 "source": "https://github.com/RocketsAreNostalgic/ran-wp-release-updater"
             },
-            "time": "2026-10-26T23:51:00+00:00"
+            "time": "2026-11-17T17:43:15+00:00"
         }
     ],
     "packages-dev": [
