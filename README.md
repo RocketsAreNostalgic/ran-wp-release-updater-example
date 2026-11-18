@@ -11,14 +11,10 @@ and registers the updater before `plugins_loaded`; registration is passive.
 
 ## Bundled updater
 
-The lock binds `ran/wp-release-updater` to `1.0.0-beta.21` (runtime protocol
-11); the Composer constraint is `~1.0.0-beta.21`. Its native status includes
-`last_native_outcome`, and binding writes use schema 2. Older copies cannot read
-those rows; incompatible runtime protocols fail closed in either load order. Coordinate compatible bundled copies before
-installation; changing load order does not resolve a protocol conflict.
-
-See [testing and qualification](docs/testing.md) for what the local gates and
-archive build prove, and the installed checks still required.
+This plugin bundles its own release updater at the version in `composer.lock`.
+Copies on one site must use compatible runtime protocols or release updating
+fails closed. See the updater's
+[Multiple bundled copies and versions](https://github.com/RocketsAreNostalgic/ran-wp-release-updater/blob/main/docs/integration.md#multiple-bundled-copies-and-versions).
 
 ## Adapt it
 
