@@ -26,8 +26,8 @@ The lock binds release updater `1.0.0-beta.21`, runtime protocol 11. A normal
 build uses that committed lock, not `--updater-path`. Inspect the ZIP's
 `vendor/ran/wp-release-updater/runtime-copy.json` for the package version and
 protocol, and compare the lock's source and dist references to the published
-tag. The builder compares two independent no-dev builds byte for byte and
-excludes development files from the updater payload.
+tag. The builder installs from the lock with `--no-dev` twice and compares the
+resulting ZIPs byte for byte.
 
 Quality CI also installs and activates the exact archive on WordPress 7.0.
 That standalone smoke check does not qualify coexistence with another plugin or
