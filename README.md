@@ -9,6 +9,13 @@ or release publisher.
 It requires WordPress 7.0 or later and PHP 8.4–8.5. The main plugin file loads
 and registers the updater before `plugins_loaded`; registration is passive.
 
+## Bundled updater
+
+This plugin bundles its own release updater at the version in `composer.lock`.
+Copies on one site must use compatible runtime protocols or release updating
+fails closed. See the updater's
+[Multiple bundled copies and versions](https://github.com/RocketsAreNostalgic/ran-wp-release-updater/blob/main/docs/integration.md#multiple-bundled-copies-and-versions).
+
 ## Adapt it
 
 Change the plugin header and registration together:

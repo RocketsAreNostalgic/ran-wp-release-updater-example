@@ -19,3 +19,12 @@ qualification. That overrides only the temporary staging Composer repository;
 it never changes the committed production lock. A live end-to-end native update
 still requires owner-created immutable GitHub releases with one uploaded ZIP
 asset and separate WordPress installation evidence.
+
+## Archive qualification
+
+Inspect `vendor/ran/wp-release-updater/runtime-copy.json` in the built ZIP for
+the shipped version and protocol. The builder installs from the lock with
+`--no-dev` twice and compares the resulting ZIPs byte for byte.
+
+Quality CI's archive activation check is standalone; it does not qualify
+coexistence or a native self-update.
